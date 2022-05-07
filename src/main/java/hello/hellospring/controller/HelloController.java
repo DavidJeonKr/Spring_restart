@@ -12,12 +12,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 
+
     @GetMapping("hello")
     public String hello(Model model) {
         model.addAttribute("data", "good to see you!!");
 
         return "hello";
-    };
+    }
+
+    ;
 
 
     //api @ResponseBody 문자 반환
